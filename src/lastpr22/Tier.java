@@ -11,7 +11,7 @@ public class Tier implements Runnable {
 	protected int  yKoordinate;
 	protected int energy;
 	protected Thread thread;
-	protected double i = Math.random();
+	protected double i = Math.random();/// das muss hier sein oder in der creat methode ...!!!!
 	
 	
 	protected Tier(int lebenEnergy) {
@@ -29,7 +29,7 @@ public class Tier implements Runnable {
 		t.run();
 	}
 	
-	public void   setName () {
+	public void   setName () {/// hier muss man die thread safe classen abechten 
 		//StringBuilder name=new StringBuilder();
 		String name ="";
 		if (anzahl<=9) {
@@ -44,13 +44,15 @@ public class Tier implements Runnable {
 			name="Tier-"+anzahl;
 		}
 		int a = 0;
-		Tier (a) =new Tier(33);
-		
+									////daynamic naming problem musst ask
 	}
 	
 	
 	
-	
+	public void move() {
+		int x = (int )( Math.random()*5) ;
+		
+	}
 	
 	
 	
