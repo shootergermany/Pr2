@@ -1,11 +1,6 @@
 package lastpr22;
 
 public class Hase extends Tier implements Runnable  {
-
-	
-	
-	
-	
 	
 	protected Hase() {
 		//lebes energie muss immer 40 sein 
